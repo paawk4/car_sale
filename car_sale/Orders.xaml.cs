@@ -12,43 +12,38 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.IO;
 
 namespace car_sale
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для Orders.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Orders : Page
     {
-        public MainWindow()
+        public MainInterface mainInterface;
+        public Orders(MainInterface _mainInterface)
         {
             InitializeComponent();
-            OpenPage(pages.login);
+            mainInterface = _mainInterface;
+            OpenPage(pages.orderList);
         }
 
         public enum pages
         {
-            login,
-            regin,
-            maininterface
+            orderList,
+            createOrder
         }
 
         public void OpenPage(pages pages)
         {
-            if (pages == pages.login)
+            if (pages == pages.orderList)
             {
-                frame.Navigate(new login(this));
+                OrdersFrame.Navigate(new OrderList(this));
             }
-            else if(pages == pages.regin)
+            else if (pages == pages.createOrder)
             {
-                frame.Navigate(new regin(this));
-            }
-            else if(pages == pages.maininterface)
-            {
-                frame.Navigate(new MainInterface(this));
+                OrdersFrame.Navigate(new CreateOrder(this));
             }
         }
-
     }
 }
