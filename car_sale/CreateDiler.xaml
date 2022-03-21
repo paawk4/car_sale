@@ -1,4 +1,4 @@
-﻿<Page x:Class="car_sale.dilers"
+﻿<Page x:Class="car_sale.CreateDiler"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -6,9 +6,9 @@
       xmlns:local="clr-namespace:car_sale"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="580"
-      Title="dilers">
+      Title="CreateDiler">
 
     <Grid Background="White">
-        <Frame x:Name="DilerFrame" NavigationUIVisibility="Hidden"/>
+        
     </Grid>
 </Page>

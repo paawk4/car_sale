@@ -29,7 +29,7 @@ namespace car_sale
             orders = _orders;
         }
 
-        public void Creation(string fio, string pas, string address, string diler, string car, double cost)
+        public void Creation(string fio, string pas, string address, string diler, string car, string cost)
         {
             database.WriteLineAsync($"{fio};{pas};{address};{diler};{car};{cost}");
             database.Close();
@@ -42,9 +42,10 @@ namespace car_sale
             string address = Address_TextBox.Text;
             string diler = Diler_Combo.Text;
             string car = Car_Combo.Text;
-            double cost = double.Parse(Cost_TextBox.Text);
+            string cost = Cost_TextBox.Text;
             Creation(fio, pas, address, diler, car, cost);
-            this.NavigationService.GoBack();
+            database.Close();
+            orders.OpenPage(Orders.pages.orderList);
         }
     }
 }

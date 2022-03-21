@@ -10,5 +10,17 @@
 
     <Grid Background="White">
         <Button x:Name="CreateOrder_Button" Content="Создать заказ" HorizontalAlignment="Left" Margin="36,30,0,0" VerticalAlignment="Top" Width="100" Click="CreateOrder_Button_Click"/>
+        <ListView x:Name="listOrders" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="36,66,36,26" MouseDoubleClick="listOrders_MouseDoubleClick">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="ФИО" DisplayMemberBinding="{Binding fio}"/>
+                    <GridViewColumn Header="Паспортные данные" DisplayMemberBinding="{Binding pas}"/>
+                    <GridViewColumn Header="Адрес" DisplayMemberBinding="{Binding address}"/>
+                    <GridViewColumn Header="Дилер" DisplayMemberBinding="{Binding diler}"/>
+                    <GridViewColumn Header="Автомобиль" DisplayMemberBinding="{Binding car}"/>
+                    <GridViewColumn Header="Сумма" DisplayMemberBinding="{Binding cost}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
     </Grid>
 </Page>

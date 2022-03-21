@@ -61,11 +61,20 @@
     <Compile Include="Cars.xaml.cs">
       <DependentUpon>Cars.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ChangeOrder.xaml.cs">
+      <DependentUpon>ChangeOrder.xaml</DependentUpon>
+    </Compile>
     <Compile Include="CreateCar.xaml.cs">
       <DependentUpon>CreateCar.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CreateDiler.xaml.cs">
+      <DependentUpon>CreateDiler.xaml</DependentUpon>
+    </Compile>
     <Compile Include="CreateOrder.xaml.cs">
       <DependentUpon>CreateOrder.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DilerList.xaml.cs">
+      <DependentUpon>DilerList.xaml</DependentUpon>
     </Compile>
     <Compile Include="Dilers.xaml.cs">
       <DependentUpon>Dilers.xaml</DependentUpon>
@@ -90,11 +99,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="ChangeOrder.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="CreateCar.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="CreateDiler.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="CreateOrder.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DilerList.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
