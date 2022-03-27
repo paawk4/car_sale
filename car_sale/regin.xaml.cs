@@ -21,7 +21,6 @@ namespace car_sale
     /// </summary>
     public partial class regin : Page
     {
-        public StreamWriter database = new StreamWriter(@"database.txt", append: true);
         public MainWindow mainWindow;
         public regin(MainWindow _mainWindow)
         {
@@ -32,6 +31,7 @@ namespace car_sale
 
         public void registration(string login, string password)
         {
+            StreamWriter database = new StreamWriter(@"database.txt", append: true);
             database.WriteLineAsync($"{login};{password}");
             database.Close();
         }
@@ -86,7 +86,6 @@ namespace car_sale
 
         private void cancel_button_Click(object sender, RoutedEventArgs e)
         {
-            database.Close();
             this.NavigationService.GoBack();
         }
     }

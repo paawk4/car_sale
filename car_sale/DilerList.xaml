@@ -9,6 +9,16 @@
       Title="DilerList">
 
     <Grid Background="White">
-        <Button x:Name="CreateDiler_Button" Content="Добавить дилера" HorizontalAlignment="Left" Margin="36,30,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button x:Name="CreateDiler_Button" Content="Добавить дилера" HorizontalAlignment="Left" Margin="36,30,0,0" VerticalAlignment="Top" Width="100" Click="CreateDiler_Button_Click"/>
+        <ListView x:Name="listDilers" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="36,66,36,26" MouseDoubleClick="listDilers_MouseDoubleClick">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="id" DisplayMemberBinding="{Binding id}"/>
+                    <GridViewColumn Header="Дилер" DisplayMemberBinding="{Binding diler}"/>
+                    <GridViewColumn Header="Адрес" DisplayMemberBinding="{Binding address}"/>
+                    <GridViewColumn Header="Телефон" DisplayMemberBinding="{Binding phone}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
     </Grid>
 </Page>

@@ -9,6 +9,18 @@
       Title="CarList">
 
     <Grid Background="White">
-        
+        <Button x:Name="CreateCar_Button" Content="Добавить авто" HorizontalAlignment="Left" Margin="36,30,0,0" VerticalAlignment="Top" Width="100" Click="CreateCar_Button_Click"/>
+        <ListView x:Name="listCars" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="36,66,36,26" MouseDoubleClick="ListCars_MouseDoubleClick">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="id" DisplayMemberBinding="{Binding id}"/>
+                    <GridViewColumn Header="Авто" DisplayMemberBinding="{Binding car}"/>
+                    <GridViewColumn Header="Пробег" DisplayMemberBinding="{Binding mileage}"/>
+                    <GridViewColumn Header="Дилер" DisplayMemberBinding="{Binding diler}"/>
+                    <GridViewColumn Header="Стоимость" DisplayMemberBinding="{Binding price}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
     </Grid>
 </Page>

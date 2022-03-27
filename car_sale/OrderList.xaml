@@ -13,6 +13,7 @@
         <ListView x:Name="listOrders" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="36,66,36,26" MouseDoubleClick="listOrders_MouseDoubleClick">
             <ListView.View>
                 <GridView>
+                    <GridViewColumn Header="ID" DisplayMemberBinding="{Binding id}"/>
                     <GridViewColumn Header="ФИО" DisplayMemberBinding="{Binding fio}"/>
                     <GridViewColumn Header="Паспортные данные" DisplayMemberBinding="{Binding pas}"/>
                     <GridViewColumn Header="Адрес" DisplayMemberBinding="{Binding address}"/>

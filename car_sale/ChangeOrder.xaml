@@ -19,7 +19,7 @@
         <ComboBox x:Name="Car_Combo" HorizontalAlignment="Left" Margin="39,268,0,0" VerticalAlignment="Top" Width="220" Height="25"/>
         <Label Content="Стоимость" Margin="319,237,61,0" VerticalAlignment="Top"/>
         <TextBox x:Name="Cost_TextBox" HorizontalAlignment="Left" Margin="319,268,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Height="25"/>
-        <Button x:Name="SaveOrder_Button" Content="Сохранить" HorizontalAlignment="Left" Margin="217,365,0,0" VerticalAlignment="Top" Width="124"/>
-        <Button x:Name="DeleteOrder_Button" Content="Удалить" HorizontalAlignment="Left" Margin="415,365,0,0" VerticalAlignment="Top" Width="124"/>
+        <Button x:Name="SaveOrder_Button" Content="Сохранить" HorizontalAlignment="Left" Margin="217,365,0,0" VerticalAlignment="Top" Width="124" Click="SaveOrder_Button_Click"/>
+        <Button x:Name="DeleteOrder_Button" Content="Удалить" HorizontalAlignment="Left" Margin="415,365,0,0" VerticalAlignment="Top" Width="124" Click="DeleteOrder_Button_Click"/>
     </Grid>
 </Window>

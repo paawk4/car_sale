@@ -22,9 +22,9 @@ namespace car_sale
     public partial class OrderList : Page
     {
         public Orders orders;
-        public StreamReader database = new StreamReader(@"orders_data.txt");
         public class Order
         {
+            public int id { get; set; }
             public string fio { get; set; }
             public string pas { get; set; }
             public string address { get; set; }
@@ -37,9 +37,11 @@ namespace car_sale
             InitializeComponent();
             orders = _orders;
             LoadOrder();
+            
         }
         void LoadOrder()
         {
+            StreamReader database = new StreamReader(@"orders_data.txt");
             String line;
             line = database.ReadLine(); // читаем строчку из файла
             while(line != null)
@@ -47,28 +49,31 @@ namespace car_sale
                 string[] splitLine = line.Split(';');
                 Order dataOrder = new Order()
                 {
-                    fio = splitLine[0],
-                    pas = splitLine[1],
-                    address = splitLine[2],
-                    diler = splitLine[3],
-                    car = splitLine[4],
-                    cost = splitLine[5]
+                    id = int.Parse(splitLine[0]),
+                    fio = splitLine[1],
+                    pas = splitLine[2],
+                    address = splitLine[3],
+                    diler = splitLine[4],
+                    car = splitLine[5],
+                    cost = splitLine[6]
                 };
                 listOrders.Items.Add(dataOrder);
                 line = database.ReadLine();
             }
+            database.Close();
         }
 
         private void CreateOrder_Button_Click(object sender, RoutedEventArgs e)
         {
-            database.Close();
             orders.OpenPage(Orders.pages.createOrder);
         }
 
         private void listOrders_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            var change = new ChangeOrder();
-            change.Show();
+            int id = Convert.ToInt32(listOrders.SelectedIndex);
+            var change = new ChangeOrder(id);
+            change.ShowDialog(); // не обновляется лист бокс после изменения строчки
+            orders.OpenPage(Orders.pages.orderList);
         }
     }
 }

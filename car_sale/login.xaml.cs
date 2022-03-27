@@ -22,7 +22,6 @@ namespace car_sale
     public partial class login : Page
     {
         public MainWindow mainWindow;
-        public StreamReader database = new StreamReader(@"database.txt");
         public login(MainWindow _mainWindow)
         {
             InitializeComponent();
@@ -31,6 +30,7 @@ namespace car_sale
 
         private void login_button_Click(object sender, RoutedEventArgs e)
         {
+            StreamReader database = new StreamReader(@"database.txt");
             bool isAuthorized = false;
             if (login_textbox.Text.Length > 0) // проверяем введён ли логин     
             {
@@ -81,7 +81,6 @@ namespace car_sale
 
         private void regin_button_Click(object sender, RoutedEventArgs e)
         {
-            database.Close();
             mainWindow.OpenPage(MainWindow.pages.regin);
         }
     }
