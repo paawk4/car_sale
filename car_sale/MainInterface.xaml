@@ -9,7 +9,7 @@
       Title="MainInterface">
 
     <Grid Background="#FF1D1C1C">
-        <StackPanel Orientation="Horizontal" Margin="36,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="451">
+        <StackPanel Orientation="Horizontal" Margin="20,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="450">
             <StackPanel.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -18,11 +18,11 @@
                     <TranslateTransform/>
                 </TransformGroup>
             </StackPanel.RenderTransform>
-            <Button x:Name="orders_button" Content="Заказы" FontSize="24" Click="orders_button_Click" Width="125" Background="#FF1D1C1C" Foreground="White"/>
-            <Button x:Name="cars_button" Content="Автомобили" FontSize="24" Click="cars_button_Click" Width="161" Background="#FF1D1C1C" Foreground="White"/>
-            <Button x:Name="dilers_button" Content="Дилеры" FontSize="24" Click="dilers_button_Click" Width="125" Background="#FF1D1C1C" Foreground="White"/>
+            <Button x:Name="orders_button" Content="Заказы" FontSize="14" Click="orders_button_Click" Width="140" Background="#FF1D1C1C" Foreground="White" BorderBrush="{x:Null}"/>
+            <Button x:Name="cars_button" Content="Автомобили" FontSize="14" Click="cars_button_Click" Width="140" Background="#FF1D1C1C" Foreground="White" BorderBrush="{x:Null}"/>
+            <Button x:Name="dilers_button" Content="Дилеры" FontSize="14" Click="dilers_button_Click" Width="140" Background="#FF1D1C1C" Foreground="White" BorderBrush="{x:Null}"/>
         </StackPanel>
-        <Frame x:Name="MainInterface_Frame" Margin="37,0,0,0" Width="759" Height="450" HorizontalAlignment="Left" VerticalAlignment="Center" Background="#FF1D1C1C"/>
+        <Frame x:Name="MainInterface_Frame" Margin="20,0,0,0" Width="776" Height="450" HorizontalAlignment="Left" VerticalAlignment="Center" Background="#FF1D1C1C"/>
 
     </Grid>
 </Page>
