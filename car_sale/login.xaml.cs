@@ -20,7 +20,7 @@ namespace car_sale
     /// <summary>
     /// Логика взаимодействия для login.xaml
     /// </summary>
-    public partial class login : Page
+    public partial class login: Page
     {
         public MainWindow mainWindow;
         public login(MainWindow _mainWindow)
@@ -91,6 +91,11 @@ namespace car_sale
         private void regin_button_Click(object sender, RoutedEventArgs e)
         {
             mainWindow.OpenPage(MainWindow.pages.regin);
+        }
+
+        private void login_textbox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }

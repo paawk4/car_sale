@@ -8,15 +8,15 @@
       d:DesignHeight="450" d:DesignWidth="580"
       Title="CreateCar">
 
-    <Grid Background="White">
-        <Label Content="Модель авто" HorizontalAlignment="Left" Margin="39,77,0,0" VerticalAlignment="Top" Width="220"/>
+    <Grid Background="#FF1D1C1C">
+        <Label Content="Модель авто" HorizontalAlignment="Left" Margin="39,77,0,0" VerticalAlignment="Top" Width="220" Foreground="White" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
         <TextBox x:Name="Car_TextBox" HorizontalAlignment="Left" Margin="39,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Height="25"/>
-        <Label Content="Пробег" Margin="319,77,61,0" VerticalAlignment="Top"/>
+        <Label Content="Пробег" Margin="319,77,61,0" VerticalAlignment="Top" Foreground="White" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
         <TextBox x:Name="Mileage_TextBox" HorizontalAlignment="Left" Margin="319,108,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="220" Height="25"/>
-        <Label Content="Стоимость" HorizontalAlignment="Left" Margin="319,194,0,0" VerticalAlignment="Top" Width="220"/>
+        <Label Content="Стоимость" HorizontalAlignment="Left" Margin="319,194,0,0" VerticalAlignment="Top" Width="220" Foreground="White" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
         <TextBox x:Name="Price_TextBox" HorizontalAlignment="Left" Margin="319,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Height="24"/>
-        <Button x:Name="CreateDiler_Button" Content="Создать" HorizontalAlignment="Center" Margin="0,335,0,0" VerticalAlignment="Top" Width="124" Click="CreateCar_Button_Click"/>
-        <Label Content="Дилер" HorizontalAlignment="Left" Margin="39,194,0,0" VerticalAlignment="Top" Width="220"/>
+        <Button x:Name="CreateDiler_Button" Content="Создать" HorizontalAlignment="Center" Margin="163,350,167,0" VerticalAlignment="Top" Width="250" Click="CreateCar_Button_Click" Height="40" FontSize="20"/>
+        <Label Content="Дилер" HorizontalAlignment="Left" Margin="39,194,0,0" VerticalAlignment="Top" Width="220" Foreground="White" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
         <ComboBox x:Name="Diler_Combo" HorizontalAlignment="Left" Margin="39,225,0,0" VerticalAlignment="Top" Width="220" Height="24"/>
     </Grid>
 </Page>

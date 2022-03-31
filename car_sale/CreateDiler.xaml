@@ -8,14 +8,14 @@
       d:DesignHeight="450" d:DesignWidth="580"
       Title="CreateDiler">
 
-    <Grid Background="White">
-        <Label Content="Дилер" HorizontalAlignment="Left" Margin="39,77,0,0" VerticalAlignment="Top" Width="220"/>
+    <Grid Background="#FF1D1C1C">
+        <Label Content="Дилер" HorizontalAlignment="Left" Margin="39,77,0,0" VerticalAlignment="Top" Width="220" Foreground="White" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
         <TextBox x:Name="Diler_TextBox" HorizontalAlignment="Left" Margin="39,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Height="25"/>
-        <Label Content="Адрес" Margin="319,77,61,0" VerticalAlignment="Top"/>
+        <Label Content="Адрес" Margin="319,77,61,0" VerticalAlignment="Top" Foreground="White" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
         <TextBox x:Name="Address_TextBox" HorizontalAlignment="Left" Margin="319,108,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="220" Height="25"/>
-        <Label Content="Телефон" HorizontalAlignment="Center" Margin="0,194,0,0" VerticalAlignment="Top" Width="220"/>
+        <Label Content="Телефон" HorizontalAlignment="Center" Margin="0,194,0,0" VerticalAlignment="Top" Width="220" Foreground="White" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
         <TextBox x:Name="PhoneNumber_TextBox" HorizontalAlignment="Center" Margin="0,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Height="24"/>
-        <Button x:Name="CreateDiler_Button" Content="Создать" HorizontalAlignment="Center" Margin="0,335,0,0" VerticalAlignment="Top" Width="124" Click="CreateDiler_Button_Click"/>
+        <Button x:Name="CreateDiler_Button" Content="Создать" HorizontalAlignment="Center" Margin="159,345,161,0" VerticalAlignment="Top" Width="260" Click="CreateDiler_Button_Click" Height="39" FontSize="20"/>
 
     </Grid>
 </Page>
