@@ -57,7 +57,7 @@ namespace car_sale
                 {
                     Car_TextBox.Text = splitLine[1];
                     Mileage_TextBox.Text = splitLine[2];
-                    Diler_Combo.Text = splitLine[3];
+                    Diler_Combo.SelectedItem = splitLine[3];
                     Price_TextBox.Text = splitLine[4];
                     break;
                 }
