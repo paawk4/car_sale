@@ -6,16 +6,16 @@
         xmlns:local="clr-namespace:car_sale"
         mc:Ignorable="d"
         Title="ChangeCar" Height="450" Width="580">
-    <Grid>
-        <Label Content="Модель авто" HorizontalAlignment="Left" Margin="39,77,0,0" VerticalAlignment="Top" Width="220"/>
+    <Grid Background="#FF1D1C1C">
+        <Label Content="Модель авто" HorizontalAlignment="Left" Margin="39,77,0,0" VerticalAlignment="Top" Width="220" Foreground="White" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
         <TextBox x:Name="Car_TextBox" HorizontalAlignment="Left" Margin="39,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Height="25"/>
-        <Label Content="Пробег" Margin="319,77,61,0" VerticalAlignment="Top"/>
+        <Label Content="Пробег" Margin="319,77,61,0" VerticalAlignment="Top" Foreground="White" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
         <TextBox x:Name="Mileage_TextBox" HorizontalAlignment="Left" Margin="319,108,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="220" Height="25"/>
-        <Button x:Name="ChangeCar_Button" Content="Применить" HorizontalAlignment="Center" Margin="0,335,0,0" VerticalAlignment="Top" Width="124" Click="ChangeCar_Button_Click"/>
-        <Button x:Name="DeleteCar_Button" Content="Удалить" HorizontalAlignment="Left" Margin="415,335,0,0" VerticalAlignment="Top" Width="124" Click="DeleteCar_Button_Click"/>
-        <Label Content="Стоимость" HorizontalAlignment="Left" Margin="319,194,0,0" VerticalAlignment="Top" Width="220"/>
+        <Button x:Name="ChangeCar_Button" Content="Применить" HorizontalAlignment="Center" Margin="319,336,34,0" VerticalAlignment="Top" Width="219" Click="ChangeCar_Button_Click" Height="40"/>
+        <Button x:Name="DeleteCar_Button" Content="Удалить" HorizontalAlignment="Left" Margin="39,336,0,0" VerticalAlignment="Top" Width="220" Click="DeleteCar_Button_Click" Height="40"/>
+        <Label Content="Стоимость" HorizontalAlignment="Left" Margin="319,194,0,0" VerticalAlignment="Top" Width="220" Foreground="White" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
         <TextBox x:Name="Price_TextBox" HorizontalAlignment="Left" Margin="319,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Height="24"/>
-        <Label Content="Дилер" HorizontalAlignment="Left" Margin="39,194,0,0" VerticalAlignment="Top" Width="220"/>
+        <Label Content="Дилер" HorizontalAlignment="Left" Margin="39,194,0,0" VerticalAlignment="Top" Width="220" Foreground="White" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
         <ComboBox x:Name="Diler_Combo" HorizontalAlignment="Left" Margin="39,225,0,0" VerticalAlignment="Top" Width="220" Height="24"/>
     </Grid>
 </Window>

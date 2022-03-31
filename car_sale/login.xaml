@@ -8,13 +8,13 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="login">
 
-    <Grid Background="White">
-        <Label Content="Введите логин:" HorizontalAlignment="Center" Margin="0,140,0,0" VerticalAlignment="Top" Height="30" Width="200"/>
-        <TextBox x:Name="login_textbox" HorizontalAlignment="Center" Margin="0,175,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="30" Width="200"/>
-        <PasswordBox x:Name="password_textbox" HorizontalAlignment="Center" Margin="0,240,0,0"  VerticalAlignment="Top" Height="30" Width="200"/>
-        <Label Content="Введите пароль:" HorizontalAlignment="Center" VerticalAlignment="Top" Height="30" Width="200" Margin="0,205,0,0"/>
-        <Button x:Name="login_button" Content="Войти" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,275,120,0"  Width="80" Click="login_button_Click"/>
-        <Button x:Name="regin_button" Content="Регистрация" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="85,275,0,0" Width="115" Click="regin_button_Click"/>
+    <Grid Background="#FF1D1C1C">
+        <Label Content="Введите логин:" HorizontalAlignment="Center" Margin="0,140,0,0" VerticalAlignment="Top" Height="30" Width="200" Foreground="White"/>
+        <TextBox x:Name="login_textbox" HorizontalAlignment="Center" Margin="0,175,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="30" Width="200" Background="#FF4B4B4B" Foreground="White" TextChanged="login_textbox_TextChanged"/>
+        <PasswordBox x:Name="password_textbox" HorizontalAlignment="Center" Margin="0,240,0,0"  VerticalAlignment="Top" Height="30" Width="200" Background="#FF4B4B4B" Foreground="White"/>
+        <Label Content="Введите пароль:" HorizontalAlignment="Center" VerticalAlignment="Top" Height="30" Width="200" Margin="0,205,0,0" Foreground="White"/>
+        <Button x:Name="login_button" Content="Войти" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="300,280,420,0"  Width="80" Click="login_button_Click" Background="#FF1D1C1C" Foreground="White"/>
+        <Button x:Name="regin_button" Content="Регистрация" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="385,280,300,0" Width="115" Click="regin_button_Click" Background="#FF1D1C1C" Foreground="White"/>
 
     </Grid>
 </Page>

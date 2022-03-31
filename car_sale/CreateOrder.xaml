@@ -8,19 +8,19 @@
       d:DesignHeight="450" d:DesignWidth="580"
       Title="CreateOrder">
 
-    <Grid Background="White">
-        <Label Content="ФИО клиента" HorizontalAlignment="Left" Margin="39,77,0,0" VerticalAlignment="Top" Width="220"/>
+    <Grid Background="#FF1D1C1C">
+        <Label Content="ФИО клиента" HorizontalAlignment="Left" Margin="39,77,0,0" VerticalAlignment="Top" Width="220" Foreground="White" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
         <TextBox x:Name="Fio_TextBox" HorizontalAlignment="Left" Margin="39,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Height="25"/>
-        <Label Content="Паспортные данные" Margin="319,77,61,0" VerticalAlignment="Top"/>
+        <Label Content="Паспортные данные" Margin="319,77,61,0" VerticalAlignment="Top" Foreground="White" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
         <TextBox x:Name="Pas_TextBox" HorizontalAlignment="Left" Margin="319,108,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="220" Height="25"/>
-        <Label Content="Домашний адрес" HorizontalAlignment="Left" Margin="39,156,0,0" VerticalAlignment="Top" Width="220"/>
+        <Label Content="Домашний адрес" HorizontalAlignment="Left" Margin="39,156,0,0" VerticalAlignment="Top" Width="220" Foreground="White" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
         <TextBox x:Name="Address_TextBox" HorizontalAlignment="Left" Margin="39,187,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Height="24"/>
-        <Label Content="Дилер" Margin="319,156,61,0" VerticalAlignment="Top"/>
+        <Label Content="Дилер" Margin="319,156,61,0" VerticalAlignment="Top" Foreground="White" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
         <ComboBox x:Name="Diler_Combo" HorizontalAlignment="Left" Margin="319,187,0,0" VerticalAlignment="Top" Width="220" Height="24" SelectionChanged="Diler_Combo_SelectionChanged"/>
-        <Label Content="Автомобиль" HorizontalAlignment="Left" Margin="39,237,0,0" VerticalAlignment="Top" Width="220"/>
+        <Label Content="Автомобиль" HorizontalAlignment="Left" Margin="39,237,0,0" VerticalAlignment="Top" Width="220" Foreground="White" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
         <ComboBox x:Name="Cars_Combo" HorizontalAlignment="Left" Margin="39,268,0,0" VerticalAlignment="Top" Width="220" Height="25" SelectionChanged="Cars_Combo_SelectionChanged"/>
-        <Label Content="Стоимость" Margin="319,237,61,0" VerticalAlignment="Top"/>
+        <Label Content="Стоимость" Margin="319,237,61,0" VerticalAlignment="Top" Foreground="White" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
         <TextBox x:Name="Price_TextBox" HorizontalAlignment="Left" Margin="319,268,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Height="25"/>
-        <Button x:Name="CreateOrder_Button" Content="Создать" HorizontalAlignment="Left" Margin="217,365,0,0" VerticalAlignment="Top" Width="124" Click="CreateOrder_Button_Click"/>
+        <Button x:Name="CreateOrder_Button" Content="Создать" HorizontalAlignment="Left" Margin="161,355,0,0" VerticalAlignment="Top" Width="260" Click="CreateOrder_Button_Click" FontSize="20" Height="40"/>
     </Grid>
 </Page>

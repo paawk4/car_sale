@@ -8,13 +8,21 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="MainInterface">
 
-    <Grid Background="White">
-        <StackPanel Orientation="Vertical" Margin="0,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200">
-            <Button x:Name="orders_button" Content="Заказы" FontSize="24" Click="orders_button_Click"/>
-            <Button x:Name="dilers_button" Content="Дилеры" FontSize="24" Click="dilers_button_Click"/>
-            <Button x:Name="cars_button" Content="Автомобили" FontSize="24" Click="cars_button_Click"/>
+    <Grid Background="white">
+        <StackPanel Orientation="Horizontal" Margin="36,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="451">
+            <StackPanel.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </StackPanel.RenderTransform>
+            <Button x:Name="orders_button" Content="Заказы" FontSize="24" Click="orders_button_Click" Width="125" Background="#FF1D1C1C" Foreground="White"/>
+            <Button x:Name="cars_button" Content="Автомобили" FontSize="24" Click="cars_button_Click" Width="161" Background="#FF1D1C1C" Foreground="White"/>
+            <Button x:Name="dilers_button" Content="Дилеры" FontSize="24" Click="dilers_button_Click" Width="125" Background="#FF1D1C1C" Foreground="White"/>
         </StackPanel>
-        <Frame x:Name="MainInterface_Frame" Margin="216,0,0,0" Width="580" Height="450" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Frame x:Name="MainInterface_Frame" Margin="37,0,0,0" Width="759" Height="450" HorizontalAlignment="Left" VerticalAlignment="Center"/>
 
     </Grid>
 </Page>
