@@ -31,6 +31,7 @@ namespace car_sale
 
         public void registration(string login, string password)
         {
+            
             StreamWriter database = new StreamWriter(@"database.txt", append: true);
             database.WriteLineAsync($"{login};{password}");
             database.Close();

@@ -24,6 +24,14 @@ namespace car_sale
         public MainWindow()
         {
             InitializeComponent();
+            StreamWriter database = new StreamWriter(@"database.txt");
+            database.Close();
+            StreamWriter database1 = new StreamWriter(@"cars_data.txt");
+            database1.Close();
+            StreamWriter database2 = new StreamWriter(@"dilers_data.txt");
+            database2.Close();
+            StreamWriter database3 = new StreamWriter(@"orders_data.txt");
+            database3.Close();
             OpenPage(pages.login);
         }
 

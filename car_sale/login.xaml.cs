@@ -63,6 +63,8 @@ namespace car_sale
                     if (isAuthorized == false)
                     {
                         MessageBox.Show("Введен неправильный логин или пароль");
+                        Debug.WriteLine("Введен неправильный логин или пароль");
+                        Trace.WriteLine("Введен неправильный логин или пароль");
                         database.Close();
                         return;
                     }
@@ -70,12 +72,16 @@ namespace car_sale
                 else
                 {
                     MessageBox.Show("Введите пароль");
+                    Debug.WriteLine("Не введен пароль");
+                    Trace.WriteLine("Не введен пароль");
                     return;
                 }
             }
             else
             {
                 MessageBox.Show("Введите логин");
+                Debug.WriteLine("Не введен логин");
+                Trace.WriteLine("Не введен логин");
                 return;
             }
 
