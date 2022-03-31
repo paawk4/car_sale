@@ -5,12 +5,12 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:car_sale"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="580"
+      d:DesignHeight="450" d:DesignWidth="780"
       Title="OrderList">
 
-    <Grid Background="White">
-        <Button x:Name="CreateOrder_Button" Content="Создать заказ" HorizontalAlignment="Left" Margin="36,30,0,0" VerticalAlignment="Top" Width="100" Click="CreateOrder_Button_Click"/>
-        <ListView x:Name="listOrders" Margin="36,66,36,26" MouseDoubleClick="listOrders_MouseDoubleClick">
+    <Grid Background="#FF232323">
+        <Button x:Name="CreateOrder_Button" Content="Добавить заказ" HorizontalAlignment="Left" Margin="20,30,0,0" VerticalAlignment="Top" Width="100" Click="CreateOrder_Button_Click" Background="#FF3E3E3E" Foreground="White" BorderBrush="{x:Null}"/>
+        <ListView x:Name="listOrders" Margin="0,0,0,20" Height="360" Width="740" VerticalAlignment="Bottom" HorizontalAlignment="Center" MouseDoubleClick="listOrders_MouseDoubleClick" Background="#FF1D1C1C" BorderBrush="{x:Null}" Foreground="White">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="ID" DisplayMemberBinding="{Binding id}"/>

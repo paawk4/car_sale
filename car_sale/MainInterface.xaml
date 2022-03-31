@@ -8,8 +8,8 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="MainInterface">
 
-    <Grid Background="#FF1D1C1C">
-        <StackPanel Orientation="Horizontal" Margin="20,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="450">
+    <Grid Background="#FF4B4B4B">
+        <StackPanel Orientation="Horizontal" Margin="20,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.ColumnSpan="3" Height="20" Width="450" Background="#FF3E3E3E">
             <StackPanel.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -18,11 +18,11 @@
                     <TranslateTransform/>
                 </TransformGroup>
             </StackPanel.RenderTransform>
-            <Button x:Name="orders_button" Content="Заказы" FontSize="14" Click="orders_button_Click" Width="140" Background="#FF1D1C1C" Foreground="White" BorderBrush="{x:Null}"/>
-            <Button x:Name="cars_button" Content="Автомобили" FontSize="14" Click="cars_button_Click" Width="140" Background="#FF1D1C1C" Foreground="White" BorderBrush="{x:Null}"/>
-            <Button x:Name="dilers_button" Content="Дилеры" FontSize="14" Click="dilers_button_Click" Width="140" Background="#FF1D1C1C" Foreground="White" BorderBrush="{x:Null}"/>
+            <Button x:Name="orders_button" Content="Заказы" FontSize="12" Width="145" Click="orders_button_Click" Background="#FF3E3E3E" Foreground="White" BorderBrush="{x:Null}"/>
+            <Button x:Name="cars_button" Content="Автомобили" FontSize="12" Width="145" Click="cars_button_Click" Background="#FF3E3E3E" Foreground="White" BorderBrush="{x:Null}"/>
+            <Button x:Name="dilers_button" Content="Дилеры" FontSize="12" Width="145" Click="dilers_button_Click" Background="#FF3E3E3E" Foreground="White" BorderBrush="{x:Null}"/>
         </StackPanel>
-        <Frame x:Name="MainInterface_Frame" Margin="20,0,0,0" Width="776" Height="450" HorizontalAlignment="Left" VerticalAlignment="Center" Background="#FF1D1C1C"/>
+        <Frame x:Name="MainInterface_Frame" Margin="20,0,0,0" Width="780" Height="450" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{x:Null}" Background="#FF1D1C1C"/>
 
     </Grid>
 </Page>

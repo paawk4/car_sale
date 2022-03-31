@@ -5,16 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:car_sale"
         mc:Ignorable="d"
-        Title="Изменение дилера" Height="450" Width="580" ResizeMode="NoResize">
+        Title="Изменение дилера" Height="450" Width="780" ResizeMode="NoResize">
     <Grid Background="#FF1D1C1C">
-        <Label Content="Дилер" HorizontalAlignment="Left" Margin="39,77,0,0" VerticalAlignment="Top" Width="220" Foreground="White" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-        <TextBox x:Name="Diler_TextBox" HorizontalAlignment="Left" Margin="39,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Height="25"/>
-        <Label Content="Адрес" Foreground="White" Margin="319,77,61,0" VerticalAlignment="Top" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-        <TextBox x:Name="Address_TextBox" HorizontalAlignment="Left" Margin="319,108,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="220" Height="25"/>
-        <Label Content="Телефон" Foreground="White" HorizontalAlignment="Center" Margin="184,183,170,0" VerticalAlignment="Top" Width="220" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-        <TextBox x:Name="PhoneNumber_TextBox" HorizontalAlignment="Center" Margin="170,217,152,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="252" Height="30"/>
-        <Button x:Name="ChangeDiler_Button" Content="Применить" HorizontalAlignment="Center" Margin="379,343,35,0" VerticalAlignment="Top" Width="160" Click="ChangeDiler_Button_Click" FontSize="20" Height="40"/>
-        <Button x:Name="DeleteDiler_Button" Content="Удалить" HorizontalAlignment="Left" Margin="39,343,0,0" VerticalAlignment="Top" Width="160" Click="DeleteDiler_Button_Click" FontSize="20" Height="40"/>
-
+        <Label Content="Дилер" HorizontalAlignment="Left" Margin="90,120,0,0" VerticalAlignment="Top" Width="220" Foreground="White" FontSize="12"/>
+        <TextBox x:Name="Diler_TextBox" HorizontalAlignment="Left" Margin="90,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Height="25" Background="#FF4B4B4B" BorderBrush="{x:Null}" Foreground="White"/>
+        <Label Content="Адрес" Margin="466,120,94,0" Width="220" VerticalAlignment="Top" Foreground="White" FontSize="12"/>
+        <TextBox x:Name="Address_TextBox" Margin="466,150,90,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="25" Background="#FF4B4B4B" BorderBrush="{x:Null}" Foreground="White"/>
+        <Label Content="Телефон" HorizontalAlignment="Center" Margin="0,229,0,0" VerticalAlignment="Top" Width="220" Foreground="White" FontSize="12"/>
+        <TextBox x:Name="PhoneNumber_TextBox" HorizontalAlignment="Center" Margin="0,260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Height="25" Background="#FF4B4B4B" BorderBrush="{x:Null}" Foreground="White"/>
+        <Button x:Name="ChangeDiler_Button" Content="Сохранить" HorizontalAlignment="Center" Margin="0,358,0,0" VerticalAlignment="Top" Width="100" Click="ChangeDiler_Button_Click" BorderBrush="{x:Null}" Background="#FF3E3E3E" Foreground="White"/>
+        <Button x:Name="DeleteDiler_Button" Content="Удалить" HorizontalAlignment="Left" Margin="590,358,0,0" VerticalAlignment="Top" Width="100" Click="DeleteDiler_Button_Click" BorderBrush="{x:Null}" Background="#FF3E3E3E" Foreground="White"/>
     </Grid>
 </Window>

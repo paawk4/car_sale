@@ -8,14 +8,14 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="regin">
 
-    <Grid Background="#FF1D1C1C">
-        <Label Content="Введите логин:" HorizontalAlignment="Center" Margin="274,81,273,0" VerticalAlignment="Top" Height="30" Width="200" Foreground="White" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" />
-        <TextBox x:Name="login_textbox" HorizontalAlignment="Center" Margin="274,116,273,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="30" Width="200" Background="#FF4B4B4B" Foreground="White"/>
-        <PasswordBox x:Name="password_textbox" HorizontalAlignment="Center"  VerticalAlignment="Top" Height="30" Width="200" Margin="274,186,273,0" Background="#FF4B4B4B" Foreground="White"/>
-        <PasswordBox x:Name="rep_password_textbox" HorizontalAlignment="Center" VerticalAlignment="Top" Height="30" Width="200" Margin="274,254,273,0" Background="#FF4B4B4B" Foreground="White"/>
-        <Label Content="Введите пароль:" HorizontalAlignment="Center" VerticalAlignment="Top" Height="34" Width="200" Margin="274,146,273,0" Foreground="White" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
-        <Label Content="Введите пароль повторно:" HorizontalAlignment="Center" VerticalAlignment="Top" Height="38" Width="200" Margin="274,216,273,0" Foreground="White" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
-        <Button x:Name="regin_button" Content="Регистрация" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="386,297,300,0" Width="114" Click="regin_button_Click" Background="#FF1D1C1C" Foreground="White"/>
-        <Button x:Name="cancel_button" Content="Отмена" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="300,297,420,0"  Width="80" Click="cancel_button_Click" Background="#FF1D1C1C" Foreground="White" />
+    <Grid Background="#FF232323">
+        <Label Content="Введите логин:" HorizontalAlignment="Center" Margin="0,85,0,0" VerticalAlignment="Top" Width="200" Foreground="White" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" />
+        <TextBox x:Name="login_textbox" HorizontalAlignment="Center" Margin="274,116,273,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="30" Width="200" Background="#FF4B4B4B" Foreground="White" BorderBrush="{x:Null}"/>
+        <PasswordBox x:Name="password_textbox" HorizontalAlignment="Center"  VerticalAlignment="Top" Height="30" Width="200" Margin="274,186,273,0" Background="#FF4B4B4B" Foreground="White" BorderBrush="{x:Null}"/>
+        <PasswordBox x:Name="rep_password_textbox" HorizontalAlignment="Center" VerticalAlignment="Top" Height="30" Width="200" Margin="274,254,273,0" Background="#FF4B4B4B" Foreground="White" BorderBrush="{x:Null}"/>
+        <Label Content="Введите пароль:" HorizontalAlignment="Center" VerticalAlignment="Top" Width="200" Margin="0,155,0,0" Foreground="White" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+        <Label Content="Введите пароль повторно:" HorizontalAlignment="Center" VerticalAlignment="Top" Width="200" Margin="0,223,0,0" Foreground="White" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+        <Button x:Name="regin_button" Content="Регистрация" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="87,297,0,0" Width="114" Click="regin_button_Click" Background="#FF3E3E3E" Foreground="White" BorderBrush="{x:Null}"/>
+        <Button x:Name="cancel_button" Content="Отмена" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,297,120,0"  Width="80" Click="cancel_button_Click" Background="#FF3E3E3E" Foreground="White" BorderBrush="{x:Null}" />
     </Grid>
 </Page>

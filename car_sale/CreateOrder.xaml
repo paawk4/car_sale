@@ -5,22 +5,22 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:car_sale"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="580"
+      d:DesignHeight="450" d:DesignWidth="780"
       Title="CreateOrder">
 
-    <Grid Background="#FF1D1C1C">
-        <Label Content="ФИО клиента" HorizontalAlignment="Left" Margin="39,77,0,0" VerticalAlignment="Top" Width="220" Foreground="White" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-        <TextBox x:Name="Fio_TextBox" HorizontalAlignment="Left" Margin="39,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Height="25"/>
-        <Label Content="Паспортные данные" Margin="319,77,61,0" VerticalAlignment="Top" Foreground="White" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-        <TextBox x:Name="Pas_TextBox" HorizontalAlignment="Left" Margin="319,108,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="220" Height="25"/>
-        <Label Content="Домашний адрес" HorizontalAlignment="Left" Margin="39,156,0,0" VerticalAlignment="Top" Width="220" Foreground="White" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-        <TextBox x:Name="Address_TextBox" HorizontalAlignment="Left" Margin="39,187,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Height="24"/>
-        <Label Content="Дилер" Margin="319,156,61,0" VerticalAlignment="Top" Foreground="White" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-        <ComboBox x:Name="Diler_Combo" HorizontalAlignment="Left" Margin="319,187,0,0" VerticalAlignment="Top" Width="220" Height="24" SelectionChanged="Diler_Combo_SelectionChanged"/>
-        <Label Content="Автомобиль" HorizontalAlignment="Left" Margin="39,237,0,0" VerticalAlignment="Top" Width="220" Foreground="White" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-        <ComboBox x:Name="Cars_Combo" HorizontalAlignment="Left" Margin="39,268,0,0" VerticalAlignment="Top" Width="220" Height="25" SelectionChanged="Cars_Combo_SelectionChanged"/>
-        <Label Content="Стоимость" Margin="319,237,61,0" VerticalAlignment="Top" Foreground="White" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-        <TextBox x:Name="Price_TextBox" HorizontalAlignment="Left" Margin="319,268,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Height="25"/>
-        <Button x:Name="CreateOrder_Button" Content="Создать" HorizontalAlignment="Left" Margin="161,355,0,0" VerticalAlignment="Top" Width="260" Click="CreateOrder_Button_Click" FontSize="20" Height="40"/>
+    <Grid Background="#FF232323">
+        <Label Content="ФИО клиента" HorizontalAlignment="Left" Margin="140,100,0,0" VerticalAlignment="Top" Width="220" Foreground="White"/>
+        <TextBox x:Name="Fio_TextBox" HorizontalAlignment="Left" Margin="140,131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Height="25" Background="#FF4B4B4B" Foreground="White" BorderBrush="{x:Null}"/>
+        <Label Content="Паспортные данные" Margin="420,100,0,0" VerticalAlignment="Top" Foreground="White" HorizontalAlignment="Left"/>
+        <TextBox x:Name="Pas_TextBox" HorizontalAlignment="Left" Margin="420,131,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="220" Height="25" Background="#FF4B4B4B" Foreground="White" BorderBrush="{x:Null}"/>
+        <Label Content="Домашний адрес" HorizontalAlignment="Left" Margin="140,179,0,0" VerticalAlignment="Top" Width="220" Foreground="White"/>
+        <TextBox x:Name="Address_TextBox" HorizontalAlignment="Left" Margin="140,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="220" Height="24" Background="#FF4B4B4B" BorderBrush="{x:Null}" Foreground="White"/>
+        <Label Content="Дилер" Margin="420,179,0,0" VerticalAlignment="Top" Foreground="White" HorizontalAlignment="Left"/>
+        <ComboBox x:Name="Diler_Combo" HorizontalAlignment="Left" Margin="420,0,0,0" VerticalAlignment="Center" Width="220" Height="24" SelectionChanged="Diler_Combo_SelectionChanged" Background="Black" BorderBrush="{x:Null}"/>
+        <Label Content="Автомобиль" HorizontalAlignment="Left" Margin="140,260,0,0" VerticalAlignment="Top" Width="220" Foreground="White"/>
+        <ComboBox x:Name="Cars_Combo" HorizontalAlignment="Left" Margin="140,291,0,0" VerticalAlignment="Top" Width="220" Height="25" SelectionChanged="Cars_Combo_SelectionChanged" Background="#FF4B4B4B" BorderBrush="{x:Null}" Foreground="Black"/>
+        <Label Content="Стоимость" Margin="420,260,0,0" VerticalAlignment="Top" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left"/>
+        <TextBox x:Name="Price_TextBox" HorizontalAlignment="Left" Margin="420,291,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Height="25" Background="#FF4B4B4B" BorderBrush="{x:Null}" Foreground="White"/>
+        <Button x:Name="CreateOrder_Button" Content="Создать" HorizontalAlignment="Center" Margin="0,360,0,0" VerticalAlignment="Top" Width="100" Click="CreateOrder_Button_Click" FontSize="12" Height="20" BorderBrush="{x:Null}" Background="#FF3E3E3E" Foreground="White"/>
     </Grid>
 </Page>

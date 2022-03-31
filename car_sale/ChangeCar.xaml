@@ -5,18 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:car_sale"
         mc:Ignorable="d"
-        Title="Изменение авто" Height="450" Width="580">
+        Title="Изменение авто" Height="450" Width="780">
     <Grid Background="#FF1D1C1C">
-        <Label Content="Модель авто" HorizontalAlignment="Left" Margin="39,77,0,0" VerticalAlignment="Top" Width="220" Foreground="White" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-
-        <TextBox x:Name="Car_TextBox" HorizontalAlignment="Left" Margin="39,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Height="25"/>
-        <Label Content="Пробег" Margin="319,77,61,0" VerticalAlignment="Top" Foreground="White" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-        <TextBox x:Name="Mileage_TextBox" HorizontalAlignment="Left" Margin="319,108,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="220" Height="25"/>
-        <Button x:Name="ChangeCar_Button" Content="Применить" HorizontalAlignment="Center" Margin="319,336,34,0" VerticalAlignment="Top" Width="219" Click="ChangeCar_Button_Click" Height="40"/>
-        <Button x:Name="DeleteCar_Button" Content="Удалить" HorizontalAlignment="Left" Margin="39,336,0,0" VerticalAlignment="Top" Width="220" Click="DeleteCar_Button_Click" Height="40"/>
-        <Label Content="Стоимость" HorizontalAlignment="Left" Margin="319,194,0,0" VerticalAlignment="Top" Width="220" Foreground="White" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-        <TextBox x:Name="Price_TextBox" HorizontalAlignment="Left" Margin="319,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Height="24"/>
-        <Label Content="Дилер" HorizontalAlignment="Left" Margin="39,194,0,0" VerticalAlignment="Top" Width="220" Foreground="White" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-        <ComboBox x:Name="Diler_Combo" HorizontalAlignment="Left" Margin="39,225,0,0" VerticalAlignment="Top" Width="220" Height="24"/>
+        <Label Content="Модель авто" HorizontalAlignment="Left" Margin="110,115,0,0" VerticalAlignment="Top" Width="220" Foreground="White" FontSize="12"/>
+        <TextBox x:Name="Car_TextBox" HorizontalAlignment="Left" Margin="110,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Height="25" Background="#FF4B4B4B" BorderBrush="{x:Null}" Foreground="White"/>
+        <Label Content="Пробег" Margin="444,110,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Foreground="White" FontSize="12" Width="220"/>
+        <TextBox x:Name="Mileage_TextBox" Margin="444,146,0,0" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Background="#FF4B4B4B" BorderBrush="{x:Null}" Foreground="White" Width="220"/>
+        <Label Content="Стоимость" HorizontalAlignment="Left" Margin="444,232,0,0" VerticalAlignment="Top" Width="220" Foreground="White" FontSize="12"/>
+        <TextBox x:Name="Price_TextBox" HorizontalAlignment="Left" Margin="444,263,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Height="24" Background="#FF4B4B4B" BorderBrush="{x:Null}" Foreground="White"/>
+        <Label Content="Дилер" HorizontalAlignment="Left" Margin="110,232,0,0" VerticalAlignment="Top" Width="220" Foreground="White" FontSize="12"/>
+        <ComboBox x:Name="Diler_Combo" HorizontalAlignment="Left" Margin="110,263,0,0" VerticalAlignment="Top" Width="220" Height="24" BorderBrush="{x:Null}"/>
+        <Button x:Name="ChangeCar_Button" Content="Сохранить" HorizontalAlignment="Center" Margin="0,358,0,0" VerticalAlignment="Top" Width="100" Click="ChangeCar_Button_Click" BorderBrush="{x:Null}" Background="#FF3E3E3E" Foreground="White"/>
+        <Button x:Name="DeleteCar_Button" Content="Удалить" HorizontalAlignment="Left" Margin="564,358,0,0" VerticalAlignment="Top" Width="100" Click="DeleteCar_Button_Click" BorderBrush="{x:Null}" Background="#FF3E3E3E" Foreground="White"/>
     </Grid>
 </Window>
