@@ -36,10 +36,7 @@ namespace car_sale
         {
             InitializeComponent();
             orders = _orders;
-            if(listOrders.Items.IsEmpty == false)
-            {
-                LoadOrder();
-            }
+            LoadOrder();
         }
         void LoadOrder()
         {
