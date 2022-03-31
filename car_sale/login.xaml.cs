@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Diagnostics;
 
 namespace car_sale
 {
@@ -49,6 +50,8 @@ namespace car_sale
                         if (login == login_textbox.Text && pass == password_textbox.Password)
                         {
                             MessageBox.Show("Пользователь авторизовался");
+                            Debug.WriteLine("Пользователь авторизовался");
+                            Trace.WriteLine("Пользователь авторизовался");
                             isAuthorized = true;
                             mainWindow.OpenPage(MainWindow.pages.maininterface);
                             break; // если найдено совпадение -> вывод из цикла
