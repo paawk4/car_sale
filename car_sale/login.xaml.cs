@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Diagnostics;
 
 namespace car_sale
 {
@@ -49,6 +50,8 @@ namespace car_sale
                         if (login == login_textbox.Text && pass == password_textbox.Password)
                         {
                             MessageBox.Show("Пользователь авторизовался");
+                            Debug.WriteLine("Пользователь авторизовался");
+                            Trace.WriteLine("Пользователь авторизовался");
                             isAuthorized = true;
                             mainWindow.OpenPage(MainWindow.pages.maininterface);
                             break; // если найдено совпадение -> вывод из цикла
@@ -60,6 +63,8 @@ namespace car_sale
                     if (isAuthorized == false)
                     {
                         MessageBox.Show("Введен неправильный логин или пароль");
+                        Debug.WriteLine("Введен неправильный логин или пароль");
+                        Trace.WriteLine("Введен неправильный логин или пароль");
                         database.Close();
                         return;
                     }
@@ -67,12 +72,16 @@ namespace car_sale
                 else
                 {
                     MessageBox.Show("Введите пароль");
+                    Debug.WriteLine("Не введен пароль");
+                    Trace.WriteLine("Не введен пароль");
                     return;
                 }
             }
             else
             {
                 MessageBox.Show("Введите логин");
+                Debug.WriteLine("Не введен логин");
+                Trace.WriteLine("Не введен логин");
                 return;
             }
 

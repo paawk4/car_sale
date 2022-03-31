@@ -37,7 +37,6 @@ namespace car_sale
             InitializeComponent();
             orders = _orders;
             LoadOrder();
-            
         }
         void LoadOrder()
         {
@@ -72,7 +71,7 @@ namespace car_sale
         {
             int id = Convert.ToInt32(listOrders.SelectedIndex);
             var change = new ChangeOrder(id);
-            change.ShowDialog(); // не обновляется лист бокс после изменения строчки
+            change.ShowDialog();
             orders.OpenPage(Orders.pages.orderList);
         }
     }

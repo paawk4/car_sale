@@ -5,9 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:car_sale"
         mc:Ignorable="d"
-        Title="ChangeCar" Height="450" Width="580">
+        Title="Изменение авто" Height="450" Width="580">
     <Grid Background="#FF1D1C1C">
         <Label Content="Модель авто" HorizontalAlignment="Left" Margin="39,77,0,0" VerticalAlignment="Top" Width="220" Foreground="White" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+
         <TextBox x:Name="Car_TextBox" HorizontalAlignment="Left" Margin="39,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Height="25"/>
         <Label Content="Пробег" Margin="319,77,61,0" VerticalAlignment="Top" Foreground="White" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
         <TextBox x:Name="Mileage_TextBox" HorizontalAlignment="Left" Margin="319,108,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="220" Height="25"/>
