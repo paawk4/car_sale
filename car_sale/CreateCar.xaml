@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:car_sale"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="780"
+      d:DesignHeight="430" d:DesignWidth="780"
       Title="CreateCar">
 
     <Grid Background="#FF1D1C1C" HorizontalAlignment="Left" Width="780">
@@ -17,6 +17,6 @@
         <TextBox x:Name="Price_TextBox" HorizontalAlignment="Left" Margin="444,263,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Height="24" Background="#FF4B4B4B" BorderBrush="{x:Null}" Foreground="White"/>
         <Label Content="Дилер" HorizontalAlignment="Left" Margin="110,232,0,0" VerticalAlignment="Top" Width="220" Foreground="White" FontSize="12"/>
         <ComboBox x:Name="Diler_Combo" HorizontalAlignment="Left" Margin="110,263,0,0" VerticalAlignment="Top" Width="220" Height="24" BorderBrush="{x:Null}"/>
-        <Button x:Name="CreateCar_Button" Content="Создать" HorizontalAlignment="Center" Margin="0,360,0,0" VerticalAlignment="Top" Width="100" Click="CreateCar_Button_Click"  FontSize="12" Height="20" BorderBrush="{x:Null}" Background="#FF3E3E3E" Foreground="White"/>
+        <Button x:Name="CreateCar_Button" Style="{DynamicResource ButtonStyle1}" Content="Создать" HorizontalAlignment="Center" Margin="0,360,0,0" VerticalAlignment="Top" Width="100" Click="CreateCar_Button_Click"  FontSize="12" Height="20" BorderBrush="{x:Null}" Background="#FF3E3E3E" Foreground="White"/>
     </Grid>
 </Page>

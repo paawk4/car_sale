@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:car_sale"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="780"
+      d:DesignHeight="430" d:DesignWidth="780"
       Title="CreateDiler">
 
     <Grid Background="#FF232323">
@@ -15,7 +15,7 @@
         <TextBox x:Name="Address_TextBox" Margin="466,150,90,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="25" Background="#FF4B4B4B" BorderBrush="{x:Null}" Foreground="White"/>
         <Label Content="Телефон" HorizontalAlignment="Center" Margin="0,229,0,0" VerticalAlignment="Top" Width="220" Foreground="White" FontSize="12"/>
         <TextBox x:Name="PhoneNumber_TextBox" HorizontalAlignment="Center" Margin="0,260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Height="25" Background="#FF4B4B4B" BorderBrush="{x:Null}" Foreground="White"/>
-        <Button x:Name="CreateDiler_Button" Content="Создать" HorizontalAlignment="Center" Margin="0,360,0,0" VerticalAlignment="Top" Width="100" Click="CreateDiler_Button_Click"  FontSize="12" Height="20" BorderBrush="{x:Null}" Background="#FF3E3E3E" Foreground="White"/>
+        <Button x:Name="CreateDiler_Button" Style="{DynamicResource ButtonStyle1}" Content="Создать" HorizontalAlignment="Center" Margin="0,360,0,0" VerticalAlignment="Top" Width="100" Click="CreateDiler_Button_Click"  FontSize="12" Height="20" BorderBrush="{x:Null}" Background="#FF3E3E3E" Foreground="White"/>
 
     </Grid>
 </Page>

@@ -65,5 +65,10 @@ namespace car_sale
         {
             OpenPage(pages.cars);
         }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            mainWindow.OpenPage(MainWindow.pages.login);
+        }
     }
 }
