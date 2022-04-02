@@ -1,18 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
+﻿using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace car_sale
 {
@@ -30,9 +19,14 @@ namespace car_sale
             string[] dilers = TakeInfoDilers();
             string[] cars = TakeInfoCars();
             foreach (string s in dilers)
+            {
                 Diler_Combo.Items.Add(s);
+            }
+
             foreach (string s in cars)
+            {
                 Cars_Combo.Items.Add(s);
+            }
         }
         public string[] TakeInfoDilers()
         {
@@ -127,14 +121,17 @@ namespace car_sale
                 requiredСars = requiredСars.Where(x => x != null).ToArray();
             }
             foreach (string car in requiredСars)
+            {
                 Cars_Combo.Items.Add(car);
+            }
+
             Price_TextBox.Text = null;
-            
+
         }
 
         private void Cars_Combo_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if(Cars_Combo.SelectedItem != null)
+            if (Cars_Combo.SelectedItem != null)
             {
                 StreamReader dataCars = new StreamReader(@"cars_data.txt");
                 string line = dataCars.ReadLine();

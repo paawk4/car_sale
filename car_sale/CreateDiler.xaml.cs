@@ -1,18 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.IO;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace car_sale
 {
@@ -41,7 +29,7 @@ namespace car_sale
             line = database.ReadLine();
             while (line != null)
             {
-                if(line != null)
+                if (line != null)
                 {
                     string[] splitLine = line.Split(';');
                     id = int.Parse(splitLine[0]) + 1;
@@ -58,8 +46,10 @@ namespace car_sale
                 Creation(id, diler, address, phone);
                 dilers.OpenPage(dilers.pages.dilerlist);
             }
-            else MessageBox.Show("Заполните все поля");
-
+            else
+            {
+                MessageBox.Show("Заполните все поля");
+            }
         }
     }
 }

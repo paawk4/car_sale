@@ -1,18 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using System.IO;
 
 namespace car_sale
 {
@@ -37,10 +27,10 @@ namespace car_sale
             public string price { get; set; }
         }
 
-        void LoadCar()
+        private void LoadCar()
         {
             StreamReader database = new StreamReader(@"cars_data.txt");
-            String line;
+            string line;
             line = database.ReadLine();
             while (line != null)
             {
@@ -62,7 +52,7 @@ namespace car_sale
         private void ListCars_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             int id = Convert.ToInt32(listCars.SelectedIndex);
-            var change = new ChangeCar(id);
+            ChangeCar change = new ChangeCar(id);
             change.ShowDialog();
             cars.OpenPage(Cars.pages.carList);
         }

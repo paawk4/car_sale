@@ -1,18 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.IO;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace car_sale
 {
@@ -31,7 +20,7 @@ namespace car_sale
 
         public void registration(string login, string password)
         {
-            
+
             StreamWriter database = new StreamWriter(@"database.txt", append: true);
             database.WriteLineAsync($"{login};{password}");
             database.Close();
@@ -46,9 +35,16 @@ namespace car_sale
                 {
                     string[] data2Login = dataLogin[1].Split('.'); // делим вторую часть ещё на две части
                     if (data2Login.Length == 2) { }
-                    else MessageBox.Show("Укажите логин в форме х@x.x");
+                    else
+                    {
+                        MessageBox.Show("Укажите логин в форме х@x.x");
+                    }
                 }
-                else MessageBox.Show("Укажите логин в форме х@x.x");
+                else
+                {
+                    MessageBox.Show("Укажите логин в форме х@x.x");
+                }
+
                 if (password_textbox.Password.Length > 0) // проверяем пароль
                 {
                     if (password_textbox.Password.Length >= 6)
@@ -63,9 +59,14 @@ namespace car_sale
                             } // если русская раскладк
                         }
                         if (!en)
+                        {
                             MessageBox.Show("Доступна только английская раскладка"); // выводим сообщение
+                        }
                     }
-                    else MessageBox.Show("пароль слишком короткий, минимум 6 символов");
+                    else
+                    {
+                        MessageBox.Show("пароль слишком короткий, минимум 6 символов");
+                    }
 
                     if (rep_password_textbox.Password.Length > 0) // проверяем второй пароль
                     {
@@ -73,21 +74,32 @@ namespace car_sale
                         {
                             registration(login_textbox.Text, password_textbox.Password);
                             MessageBox.Show("Пользователь зарегистрирован");
-                            this.NavigationService.GoBack();
+                            NavigationService.GoBack();
                         }
-                        else MessageBox.Show("Пароли не совподают");
+                        else
+                        {
+                            MessageBox.Show("Пароли не совподают");
+                        }
                     }
-                    else MessageBox.Show("Повторите пароль");
+                    else
+                    {
+                        MessageBox.Show("Повторите пароль");
+                    }
                 }
-                else MessageBox.Show("Укажите пароль");
+                else
+                {
+                    MessageBox.Show("Укажите пароль");
+                }
             }
-            else MessageBox.Show("Укажите логин");
-
+            else
+            {
+                MessageBox.Show("Укажите логин");
+            }
         }
 
         private void cancel_button_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.GoBack();
+            NavigationService.GoBack();
         }
     }
 }
