@@ -1,18 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using System.IO;
 
 namespace car_sale
 {
@@ -28,7 +17,9 @@ namespace car_sale
             cars = _cars;
             string[] dilers = TakeInfo();
             foreach (string s in dilers)
+            {
                 Diler_Combo.Items.Add(s);
+            }
         }
         public string[] TakeInfo()
         {
@@ -36,7 +27,7 @@ namespace car_sale
             string[] dilers = File.ReadAllLines(@"dilers_data.txt").ToArray();
             string line;
             line = database.ReadLine();
-            for(int i = 0; i < dilers.Length; i++)
+            for (int i = 0; i < dilers.Length; i++)
             {
                 string[] splitLine = line.Split(';');
                 dilers[i] = splitLine[1];
@@ -77,8 +68,10 @@ namespace car_sale
                 Creation(id, car, mileage, diler, price);
                 cars.OpenPage(Cars.pages.carList);
             }
-            else MessageBox.Show("Заполните все поля");
-
+            else
+            {
+                MessageBox.Show("Заполните все поля");
+            }
         }
     }
 }

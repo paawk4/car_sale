@@ -1,18 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using System.IO;
 
 namespace car_sale
 {
@@ -38,12 +28,13 @@ namespace car_sale
             orders = _orders;
             LoadOrder();
         }
-        void LoadOrder()
+
+        private void LoadOrder()
         {
             StreamReader database = new StreamReader(@"orders_data.txt");
-            String line;
+            string line;
             line = database.ReadLine(); // читаем строчку из файла
-            while(line != null)
+            while (line != null)
             {
                 string[] splitLine = line.Split(';');
                 Order dataOrder = new Order()
@@ -70,7 +61,7 @@ namespace car_sale
         private void listOrders_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             int id = Convert.ToInt32(listOrders.SelectedIndex);
-            var change = new ChangeOrder(id);
+            ChangeOrder change = new ChangeOrder(id);
             change.ShowDialog();
             orders.OpenPage(Orders.pages.orderList);
         }

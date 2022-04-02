@@ -1,17 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+﻿using System.Collections.Generic;
 using System.IO;
+using System.Linq;
+using System.Windows;
 
 namespace car_sale
 {
@@ -28,11 +18,17 @@ namespace car_sale
             string[] dilers = TakeInfoDilers();
             string[] cars = TakeInfoCars();
             foreach (string s in dilers)
+            {
                 Diler_Combo.Items.Add(s);
+            }
+
             foreach (string s in cars)
+            {
                 Car_Combo.Items.Add(s);
+            }
+
             FillData(_id);
-            
+
         }
         public string[] TakeInfoDilers()
         {
@@ -129,13 +125,13 @@ namespace car_sale
         private void SaveOrder_Button_Click(object sender, RoutedEventArgs e)
         {
             ChangeData(_id);
-            this.Close();
+            Close();
         }
 
         private void DeleteOrder_Button_Click(object sender, RoutedEventArgs e)
         {
             DeleteData(_id);
-            this.Close();
+            Close();
         }
     }
 }

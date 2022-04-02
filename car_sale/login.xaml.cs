@@ -1,26 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Diagnostics;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using System.Diagnostics;
 
 namespace car_sale
 {
     /// <summary>
     /// Логика взаимодействия для login.xaml
     /// </summary>
-    public partial class login: Page
+    public partial class login : Page
     {
         public MainWindow mainWindow;
         public login(MainWindow _mainWindow)
@@ -37,10 +25,10 @@ namespace car_sale
             {
                 if (password_textbox.Password.Length > 0) // проверяем введён ли пароль         
                 {
-                    String line;
+                    string line;
                     database = new StreamReader(@"database.txt");
                     line = database.ReadLine(); // читаем строчку из файла
-                                                
+
                     while (line != null) // перебираем все строчки файла
                     {
                         string[] splitLine = line.Split(';');
