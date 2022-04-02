@@ -14,7 +14,7 @@ namespace car_sale
             InitializeComponent();
             StreamWriter database = new StreamWriter(@"dilers_data.txt", append: true);
             database.Close();
-            StreamWriter database1 = new StreamWriter(@"database.txt", append: true);
+            StreamWriter database1 = new StreamWriter(@"database.txt");
             database1.WriteLine("admin;admin");
             database1.Close();
             StreamWriter database2 = new StreamWriter(@"cars_data.txt", append: true);
