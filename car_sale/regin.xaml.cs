@@ -14,13 +14,11 @@ namespace car_sale
         public regin(MainWindow _mainWindow)
         {
             InitializeComponent();
-
             mainWindow = _mainWindow;
         }
 
         public void registration(string login, string password)
         {
-
             StreamWriter database = new StreamWriter(@"database.txt", append: true);
             database.WriteLineAsync($"{login};{password}");
             database.Close();

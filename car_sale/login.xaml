@@ -10,7 +10,7 @@
 
     <Grid Background="#FF232323">
         <Label Content="Введите логин:" HorizontalAlignment="Center" Margin="0,142,0,0" VerticalAlignment="Top" Height="30" Width="200" Foreground="White"/>
-        <TextBox x:Name="login_textbox" HorizontalAlignment="Center" Margin="0,175,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="30" Width="200" Background="#FF4B4B4B" Foreground="White" TextChanged="login_textbox_TextChanged" SelectionBrush="#FF0078D7" BorderBrush="{x:Null}"/>
+        <TextBox x:Name="login_textbox" HorizontalAlignment="Center" Margin="0,175,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="30" Width="200" Background="#FF4B4B4B" Foreground="White" SelectionBrush="#FF0078D7" BorderBrush="{x:Null}"/>
         <PasswordBox x:Name="password_textbox" HorizontalAlignment="Center" Margin="0,240,0,0"  VerticalAlignment="Top" Height="30" Width="200" Background="#FF4B4B4B" Foreground="White" BorderBrush="{x:Null}"/>
         <Label Content="Введите пароль:" HorizontalAlignment="Center" VerticalAlignment="Top" Height="30" Width="200" Margin="0,207,0,0" Foreground="White"/>
         <Button x:Name="login_button" Content="Войти" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,280,120,0"  Width="80" Click="login_button_Click" Background="#FF3E3E3E" Foreground="White" BorderBrush="{x:Null}" Style="{DynamicResource ButtonStyle1}"/>
