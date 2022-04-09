@@ -36,11 +36,13 @@ namespace car_sale
                     else
                     {
                         MessageBox.Show("Укажите логин в форме х@x.x");
+                        return;
                     }
                 }
                 else
                 {
                     MessageBox.Show("Укажите логин в форме х@x.x");
+                    return;
                 }
 
                 if (password_textbox.Password.Length > 0) // проверяем пароль

@@ -16,6 +16,15 @@ namespace car_sale
         {
             InitializeComponent();
             cars = _cars;
+            try
+            {
+                StreamReader database = new StreamReader(@"cars_data.txt");
+            }
+            catch
+            {
+                StreamWriter database = new StreamWriter(@"cars_data.txt", append: true);
+                database.Close();
+            }
             LoadCar();
         }
         public class Car

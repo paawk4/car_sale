@@ -16,6 +16,15 @@ namespace car_sale
         {
             InitializeComponent();
             dilers = _dilers;
+            try
+            {
+                StreamReader database = new StreamReader(@"dilers_data.txt");
+            }
+            catch
+            {
+                StreamWriter database = new StreamWriter(@"dilers_data.txt", append: true);
+                database.Close();
+            }
             LoadDiler();
         }
         public class Diler

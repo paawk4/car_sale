@@ -15,12 +15,22 @@ namespace car_sale
         {
             InitializeComponent();
             mainWindow = _mainWindow;
+            try
+            {
+                StreamReader database = new StreamReader(@"database.txt");
+            }
+            catch
+            {
+                StreamWriter database = new StreamWriter(@"database.txt", append: true);
+                database.WriteLine("admin;admin");
+                database.Close();
+            }
         }
 
         private void login_button_Click(object sender, RoutedEventArgs e)
         {
             StreamReader database = new StreamReader(@"database.txt");
-            StreamWriter debug = new StreamWriter(@"debug.txt", append: true);
+            StreamWriter debug_txt = new StreamWriter(@"debug.txt", append: true);
             bool isAuthorized = false;
             if (login_textbox.Text.Length > 0) // проверяем введён ли логин     
             {
@@ -39,12 +49,12 @@ namespace car_sale
                         if (login == login_textbox.Text && pass == password_textbox.Password)
                         {
                             MessageBox.Show("Пользователь авторизовался");
-                            debug.WriteLine("Пользователь авторизовался");
-                            Debug.WriteLine("Пользователь авторизовался");
+                            debug_txt.WriteLine("Пользователь авторизовался");
+                            debug_txt.WriteLine("Пользователь авторизовался");
                             Trace.WriteLine("Пользователь авторизовался");
                             isAuthorized = true;
                             mainWindow.OpenPage(MainWindow.pages.maininterface);
-                            debug.Close();
+                            debug_txt.Close();
                             break; // если найдено совпадение -> вывод из цикла
                         }
                         line = database.ReadLine(); // читаем след строку
@@ -53,10 +63,10 @@ namespace car_sale
                     if (isAuthorized == false)
                     {
                         MessageBox.Show("Введен неправильный логин или пароль");
-                        debug.WriteLine("Введен неправильный логин или пароль");
-                        Debug.WriteLine("Введен неправильный логин или пароль");
+                        debug_txt.WriteLine("Введен неправильный логин или пароль");
+                        debug_txt.WriteLine("Введен неправильный логин или пароль");
                         Trace.WriteLine("Введен неправильный логин или пароль");
-                        debug.Close();
+                        debug_txt.Close();
                         database.Close();
                         return;
                     }
@@ -64,23 +74,23 @@ namespace car_sale
                 else
                 {
                     MessageBox.Show("Введите пароль");
-                    debug.WriteLine("Не введен пароль");
-                    Debug.WriteLine("Не введен пароль");
+                    debug_txt.WriteLine("Не введен пароль");
+                    debug_txt.WriteLine("Не введен пароль");
                     Trace.WriteLine("Не введен пароль");
-                    debug.Close();
+                    debug_txt.Close();
                     return;
                 }
             }
             else
             {
                 MessageBox.Show("Введите логин");
-                debug.WriteLine("Не введен логин");
-                Debug.WriteLine("Не введен логин");
+                debug_txt.WriteLine("Не введен логин");
+                debug_txt.WriteLine("Не введен логин");
                 Trace.WriteLine("Не введен логин");
-                debug.Close();
+                debug_txt.Close();
                 return;
             }
-            debug.Close();
+            debug_txt.Close();
             database.Close();
         }
 
