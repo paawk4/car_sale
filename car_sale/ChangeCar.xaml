@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:car_sale"
         mc:Ignorable="d"
-        Title="Изменение авто" Height="450" Width="780">
+        Title="Изменение авто" Height="450" Width="780"
+        WindowStyle="ToolWindow">
     <Grid Background="#FF1D1C1C">
         <Label Content="Модель авто" HorizontalAlignment="Left" Margin="110,115,0,0" VerticalAlignment="Top" Width="220" Foreground="White" FontSize="12"/>
         <TextBox x:Name="Car_TextBox" HorizontalAlignment="Left" Margin="110,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Height="25" Background="#FF4B4B4B" BorderBrush="{x:Null}" Foreground="White"/>
